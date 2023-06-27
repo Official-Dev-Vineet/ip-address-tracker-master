@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="style.css" />
+  <title>IP Address Tracker</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>IP Address Tracker</h1>
+      <div class="input-container">
+        <input type="text" placeholder="Search for any address" id="input"  autocomplete="country" />
+        <button><img src="images/icon-arrow.svg" alt="find" /></button>
+        <div class="error-msg"></div>
+      </div>
+    </header>
+    <section id="result-box">
+      <div class="query">
+        <div class="result">
+          <h4>ip address</h4>
+          <p id="ip">N/A</p>
+        </div>
+        <div class="result">
+          <h4>location</h4>
+          <p id="domain">N/A</p>
+        </div>
+        <div class="result">
+          <h4>zipcode</h4>
+          <p id="timezone">N/A</p>
+        </div>
+        <div class="result">
+          <h4 title="Internet Service Provider">isp</h4>
+          <p id="isp">N/A</p>
+        </div>
+      </div>
+      <div id="mapInitial"></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
